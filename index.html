@@ -1,73 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <p class="li"nk rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/61ebb60581.js" crossorigin="anonymous"></script>
+    <title>Your Personal Web Page</title>
+    <!-- session final-3 -->
+    <!-- Task: reset main styles on all elements -->
+    <!-- Hint: set box-sizing to border-box, margin and padding to zeros -->
+    <style>
+      * {
+      box-sizing: border-box;
+      magin: 0;
+      padding: 0;
 
-<head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <script src="https://kit.fontawesome.com/61ebb60581.js" crossorigin="anonymous"></script>
-  <title>Your Personal Web Page</title>
-</head>
-
-<body>
-  <!-- session final-4 -->
-  <!-- Task: checkout to a new branch -->
-
-  <!-- session final-4 -->
-  <!-- Task: add a div with class 'header' -->
-  <!-- Hint: structure: <div class="header"> <p class="h1">Your Name</p> <div class="nav"> <div class="ul"> links for: Home, About, Portfolio, Services, Blog, Contact </div> </div> </div>  -->
-  <div class="header">
-
-    <p class="h1">Mira</p>
-
-
-  </div>
-  <div class="nav">
-    <div class="ul">
-      links for: Home, about, Protofolio, Services, Blog, Contact
-    </div>
-  </div>
-
-
-  <!-- session final-4 -->
-  <!-- Task: add a div with class 'main' -->
-  <!-- Hint: this div will include 6 div elements -->
-  <!-- Hint: div element with class 'section' and id 'home' -->
-  <!-- Hint: div element with class 'section' and id 'about' -->
-  <!-- Hint: div element with class 'section' and id 'portfolio' -->
-  <!-- Hint: div element with class 'section' and id 'services' -->
-  <!-- Hint: div element with class 'section' and id 'stats' -->
-  <!-- Hint: div element with class 'section' and id 'blog' -->
-  <!-- Hint: div element with class 'section' and id 'contact' -->
-  <div id="home" class="section">
+    }
+   
+    </style>
     
-  </div>
+    <!-- session final-3 -->
+    <!-- Task:
+      - set the bg color of the body to white using hex
+      - style the header element to have color of hex 'f2f2f2', padding of 20 pixels, and center its text
+      - style the element with class 'h1' to have no margin, and a font size of 24 pixels
+    -->
+   
+    <!-- session final-3 -->
+    <!-- Task:
+      - style the ul inside the nav to have no list style, no padding, a margin of 20 pixels vertically and no margin horizontally. Also set the display property to flex, allow wrapping, center the content and the text
+      - style the list items inside of the ul, inside of the nav, to have display as inline-block, and a margin of 10 pixels on the right
+      - style the anchor tag inside the list items inside of the ul, inside of the nav, to have no text decoration, a hex color '333', and vertical padding of 5 pixels, and horizontal padding of 10 pixels
+      - style all the elements that are the immediate child of the element with class 'portfolio__row', to have width of 400 pixels
+    -->
+    <!-- session final-3 -->
+    <!-- Task:
+      - style elements with classes 'portfolio__row', 'stats__row', and 'blogs__row' to have display set to flex. Also allow wrapping, center items vertically, and distribute the items with equal space around. Also set a minimum gap of 10 pixels
+    -->
+   
+    <!-- session final-3 -->
+    <!-- Task:
+      - style immediate child elements inside elements with classes 'portfolio__row', 'stats__row', and 'blogs__row' to have width set to 450 pixels, and the text aligned in the center
+    -->
+   
+    <!-- session final-3 -->
+    <!-- Task:
+      - style element with class 'main' to have display set to flex, flex direction set to column, with a gap of 10 pixels between items, and items centered horizontally
+    -->
+   
+    <!-- session final-3 -->
+    <!-- Task:
+      - style element with class 'section' to have 20 pixels of padding, a width of 100%, a bg color of 'f5f5f5', and a border radius of 5 pixels
+    -->
+   
+    <!-- session final-3 -->
+    <!-- Task:
+      - style element with class 'section' to have 20 pixels of padding, a width of 100%, a bg color of 'f5f5f5', and a border radius of 5 pixels
+    -->
+   
+    <!-- session final-3 -->
+    <!-- Task:
+      - style element with class 'h2' to have font size of 24 pixels, and a margin of 10 pixels only on the bottom
+    -->
+   
+    <!-- session final-3 -->
+    <!-- Task:
+      - style p elements to have a font size of 16 pixels and a margin of 10 pixels only on the bottom
+    -->
+   
+    <!-- session final-3 -->
+    <!-- Task:
+      - style elements with classes 'work' and 'blog' to have display set to flex, flex-direction set to column. Also center the items horizontally, and add a margin of 20 pixels on the bottom
+    -->
+   
+    <!-- session final-3 -->
+    <!-- Task:
+      - style img elements inside of elements with classes 'work' and 'blog', to have maximum width set to 100%, height set to auto, border radius set to 5 pixels, and the bottom margin set to 10 pixels
+    -->
+   
+    <!-- session final-3 -->
+    <!-- Task:
+      - center the text inside the element with class 'work__description'
+      - style the elements with class 'h3' inside the element with class 'work__description' to have a font size of 18 pixels, and a margin of 5 pixels on the bottom
+      - style the p inside the element with class 'work__description' to have a font size of 14 pixels, and no margin on the bottom
+    -->
+   
+    <!-- session final-3 -->
+    <!-- Task:
+      - style the elements with class 'social-media' to have a font size of 20 pixels
+    -->
+   
+    <!-- session final-3 -->
+    <!-- Task: create some functional classes as below
+      - create a functional class 'flex', that sets the display to flex
+      - create a functional class 'justify-around' that sets justify-content to space-around
+      - create a functional class 'list-none' that sets list-style to none
+      - create a functional class 'p-2' that sets padding to 0.5rem
+    -->
+  </head>
+  <body>
+    <style>
+      body {
+        background-color:#ffffff
+        }
+        .header {
+      color: #f2f2f2; /* Set the color of the header to hex 'f2f2f2' */
+      padding: 20px; /* Set padding of 20 pixels for the header */
+      text-align: center; /* Center the text in the header */
+    }
+.h1 {
+  margin: 0; /* Set no margin for elements with class 'h1' */
+      font-size: 24px; /* Set font size of 24 pixels for elements with class 'h1' */
+    }
+
+    .nav .ul {
+      list-style: none; /* Remove list styling for ul inside nav */
+  padding: 0; /* Remove padding for ul inside nav */
+  margin: 20px 0; /* Set vertical margin to 20 pixels and no horizontal margin for ul inside nav */
+  display: flex; /* Set display property to flex for ul inside nav */
+  flex-wrap: wrap; /* Allow content to wrap within the flex container */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  text-align: center; /* Center the text within the ul */
+}
+
+.nav .ul .li{
+  display: inline-block;
+  margin-left: 10px;
+}
+.nav .ul a {
+
+  text-decoration: none;
+  color: #333;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 
 
-  <div id="about" class="section"> About
+}
+.portfolio_row . * {
+  width: 400px;
+}
+.portfolio_row,
+.stats_row,
+.blog_row {
+  diplay: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
 
-  </div>
-  <div id="portfolio" class="section"> Portfolio
+}
+.portfolio_row > *, .status_row> *, .blog_row > * {
+width: 450px;
+text align: center;
+}
+.main{
+  display: flex;
+  flex-direction:column ;
+  gap: 10px;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color:#f2f2f2;
+  border-radius: 5px;
+}
+.h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 
-  </div>
-  <div id="services" class="section"> 
+}
+p {
+  font-size: 1opx;
+  margin-bottom: 10px;
+}
+.work .blog{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
-  </div>
-  <div id="contact" class="section"> 
 
-  </div>
+    
+    
+  </style>
+
+    <!-- session final-3 -->
+    <!-- Task: use semantic HTML for element with class 'header' -->
+    <div class="header">
+      
+    
+      }
+      <!-- session final-3 -->
+      <!-- Task: use semantic HTML for element with class 'h1' -->
+      <p class="h1">mira</p>
+      <!-- session final-3 -->
+      <!-- Task: use semantic HTML for element with class 'nav' -->
+      <div class="nav">
+        <!-- session final-3 -->
+        <!-- Task: use semantic HTML for element with class 'ul' -->
+        <div class="ul">
+          
+          
+          <!-- session final-3 -->
+          <!-- Task: use semantic HTML for anchor elements inside 'ul' -->
+          <a class="li" href="#home">Home</a>
+          <a class="li" href="#about">About</a>
+          <a class="li" href="#portfolio">Portfolio</a>
+          <a class="li" href="#services">Services</a>
+          <a class="li" href="#blog">Blog</a>
+          <a class="li" href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <!-- session final-3 -->
+    <!-- Task: use semantic HTML for element with class 'main' -->
+    <div class="main">
+      <!-- session final-3 -->
+      <!-- Task: use semantic HTML for element with class 'section' -->
+      <div class="section" id="home">
+        <!-- session final-3 -->
+        <!-- Task: use semantic HTML for all elements with class 'h2' -->
+        <p class="h2">Home</p>
+        <p>Welcome to my website!</p>
+        <br />
+        <p>
+          <strong>This site is ... </strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, sapiente soluta in ipsum obcaecati esse quisquam dolorem quas ullam autem voluptates laboriosam deleniti, nisi eveniet tenetur modi eligendi eos dolor pariatur facilis aspernatur. Assumenda obcaecati omnis repellendus expedita debitis hic, vel officia velit! Fuga molestiae aspernatur quaerat culpa inventore harum laboriosam explicabo quod mollitia incidunt expedita nostrum
+          officiis sapiente, maxime ducimus magni velit distinctio dolorem ipsam veritatis voluptate itaque. Iusto delectus vero architecto obcaecati pariatur aspernatur, id expedita, minima veniam dolor molestiae dolorem ullam minus officiis nobis unde optio voluptas est cumque cupiditate voluptatum a laudantium hic. Nesciunt, reprehenderit id!
+        </p>
+        <br />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis maiores, cum optio a recusandae id tempora suscipit dolorum voluptatem mollitia in. Sit, tempora eum repellat magni doloremque incidunt voluptatem omnis saepe repudiandae sapiente quisquam iste aliquam assumenda sunt, autem aperiam, accusamus alias. Nihil unde reiciendis fugit est doloribus itaque, consectetur necessitatibus neque totam hic quod nostrum modi vel sed ipsum, a sint repellendus culpa pariatur, placeat
+          maiores explicabo quam esse. Reprehenderit itaque saepe atque minus doloribus iure, veritatis temporibus esse, provident sit nostrum, incidunt necessitatibus fugiat officia. Omnis, nobis voluptatibus itaque nihil corporis aperiam architecto reiciendis provident cum, a consequatur, dolor quia modi ad in eveniet saepe commodi dolorem odio iusto explicabo suscipit quisquam? Enim quaerat repudiandae aliquid velit reiciendis.
+        </p>
+      </div>
 
 
+      <div class="section" id="about">
+        <p class="h2">About Me</p>
+        <p>
+          <strong> A personal summary about me: </strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, magni recusandae? Alias iste laudantium mollitia, voluptatem at eius cumque voluptatum vel praesentium necessitatibus cupiditate fuga iure error aut blanditiis atque nam expedita odit provident quibusdam modi ad ab asperiores? Voluptatum deserunt culpa rerum itaque nihil sit magnam atque. Odit laboriosam accusamus esse tempore quo nulla temporibus, libero dolorem
+          expedita, omnis in natus officia, consequuntur modi magnam. Ex, corporis numquam. Sit officiis aspernatur quos ipsum praesentium, commodi corrupti rerum vel aut!
+        </p>
+      </div>
 
 
+      <div class="section" id="portfolio">
+        <p class="h2">Portfolio</p>
+        <div class="portfolio__row">
+          <div class="work">
+            <img src="images/chris-meads-Uy9Bh-kmt3s-unsplash.jpg" alt="Work 1" />
+            <div class="work__description">
+              <p class="h3">Work 1</p>
+              <p>Provide a brief description or caption for this work.</p>
+            </div>
+          </div>
 
 
-  <!-- session final-4 -->
-  <!-- Task: populate each div with class 'section' with content -->
-  <!-- Hint: use <p class="h2">... for main title text in a section -->
-  <!-- Hint: use <p class="h3">... for important text in a section -->
-  <!-- Hint: use <strong>... for emphasizing a part of a paragraph -->
-  <p class="h2"></p>
-  <p class="h3"></p>
-  <strong></strong>
-</body>
+          <div class="work">
+            <img src="images/nils-leonhardt-DPQPY8541AY-unsplash.jpg" alt="Work 2" />
+            <div class="work__description">
+              <p class="h3">Work 2</p>
+              <p>Provide a brief description or caption for this work.</p>
+            </div>
+          </div>
 
+
+          <div class="work">
+            <img src="images/eric-welch-eRwWGWkh0vU-unsplash.jpg" alt="Work 3" />
+            <div class="work__description">
+              <p class="h3">Work 3</p>
+              <p>Provide a brief description or caption for this work.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Add more work examples as needed -->
+      </div>
+
+
+      <div class="section" id="services">
+        <p class="h2">Services</p>
+        <p><strong>Service 1:</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil itaque enim, natus cumque recusandae iste ea corrupti sequi autem unde placeat, modi odit voluptate omnis dolorum? At et exercitationem eligendi.</p>
+        <p><strong>Service 2:</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eum distinctio deleniti veniam veritatis minima officia quod. Officia nobis, neque alias natus odio unde quia accusantium eum aperiam velit error a nulla impedit, veritatis numquam? Architecto commodi earum tenetur hic perferendis aliquid aut qui consequuntur.</p>
+        <p><strong>Service 3:</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint tenetur aliquam, repudiandae et fugit, blanditiis est incidunt alias ex adipisci error. Facere quidem eaque rem minima. Nemo maxime, voluptatem harum repudiandae minima commodi impedit doloremque dicta iste officia quam libero ut velit esse soluta recusandae enim inventore iusto dignissimos consectetur, dolorum nam nostrum. Molestiae, sapiente.</p>
+      </div>
+
+
+      <div class="section" id="stats">
+        <p class="h2">Stats</p>
+        <div class="stats__row">
+          <div class="stat">
+            <p class="h3">100</p>
+            <p>Happy Clients</p>
+          </div>
+
+
+          <div class="stat">
+            <p class="h3">200</p>
+            <p>Projects Completed</p>
+          </div>
+
+
+          <div class="stat">
+            <p class="h3">300</p>
+            <p>Blog Posts</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="section" id="blog">
+        <p class="h2">Blog</p>
+        <div class="blogs__row">
+          <div class="blog">
+            <img src="images/chris-meads-Uy9Bh-kmt3s-unsplash.jpg" alt="blog 1" />
+            <div class="blog__description">
+              <p class="h3">Blog 1</p>
+              <p>Provide a brief description or caption for this blog.</p>
+            </div>
+          </div>
+
+
+          <div class="blog">
+            <img src="images/nils-leonhardt-DPQPY8541AY-unsplash.jpg" alt="blog 2" />
+            <div class="blog__description">
+              <p class="h3">Blog 2</p>
+              <p>Provide a brief description or caption for this blog.</p>
+            </div>
+          </div>
+
+
+          <div class="blog">
+            <img src="images/eric-welch-eRwWGWkh0vU-unsplash.jpg" alt="blog 3" />
+            <div class="blog__description">
+              <p class="h3">Blog 3</p>
+              <p>Provide a brief description or caption for this blog.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="section" id="contact">
+        <p class="h2">Contact</p>
+        <div class="contact__container">
+          <div class="contact__details">
+            <p class="h3">Get in Touch</p>
+            <p>If you have any questions or inquiries, feel free to reach out to us.</p>
+            <div class="ul">
+              <p class="li"><strong>Email:</strong> example@email.com</p>
+              <p class="li"><strong>Phone:</strong> +1 123-456-7890</p>
+            </div>
+          </div>
+          <div class="social-media">
+            <p class="h3">Connect with Us</p>
+            <div class="ul" class="flex p-2 justify-around list-none">
+              <p class="li">
+                <a href="https://www.facebook.com/example" target="_blank" rel="noopener noreferrer"> <i class="fab fa-facebook-square"></i> Facebook </a>
+              </p>
+              <p class="li">
+                <a href="https://twitter.com/example" target="_blank" rel="noopener noreferrer"> <i class="fab fa-twitter-square"></i> Twitter </a>
+              </p>
+              <p class="li">
+                <a href="https://www.instagram.com/example" target="_blank" rel="noopener noreferrer"> <i class="fab fa-instagram-square"></i> Instagram </a>
+              </p>
+              <p class="li">
+                <a href="https://www.linkedin.com/company/example" target="_blank" rel="noopener noreferrer"> <i class="fab fa-linkedin"></i> LinkedIn </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
+
+
