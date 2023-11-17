@@ -34,7 +34,27 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        gap:10px;
     }
+    </style>
+    <style>
+        .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(390, 1fr));
+  
+}
+
+@media only screen and (max-width: 390px) {
+  .cards{
+    width:40%;
+    height: auto;
+
+  }
+}
+@media only screen and (max-width: 390px) {
+body {
+    background-color: blue;
+}
     </style>
 </head>
 <body>

@@ -1,11 +1,10 @@
-solution-1-card.html
+step-1-card-grid.html
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
     <style>
       * {
         box-sizing: border-box;
@@ -14,10 +13,11 @@ solution-1-card.html
       }
 
       body {
-        height: 100vh;
-        display: flex;
+        padding: 40px;
       }
+    </style>
 
+    <style>
       .card {
         width: 300px;
         height: 500px;
@@ -99,18 +99,65 @@ solution-1-card.html
         color: #1a6c3d;
       }
     </style>
+    
+    <style>
+      #cards-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-gap: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <!-- session final -->
+    <!-- Task: add styles for the element with ID 'cards-grid' -->
+    <!-- Hint: set display to grid, with columns template set to auto-fit with minmax 280px -> 1fr -->
+    <!-- Hint: add a gap of 20 pixels between the child elements -->
+    <!-- Hint: use justify-content: center; to center cards horizontally -->
+    <!-- Hint: use align-content: center; to center cards vertically -->
   </head>
   <body>
-    <div class="card card--dark">
-      <img src="images\360_F_547978128_vqEEUYBr1vcAwfRAqReZXTYtyawpgLcC.jpg" alt="Image" class="card__image" />
-      <span class="card__header">
-        <h2 class="card__title" title="Lorem ipsum title">Card Title</h2>
-        <p class="card__price">$19.99 per month</p>
-      </span>
-      <div class="card__content">
-        <p class="card__text">Lorem.</p>
-        <a href="#" class="card__button">Read More</a>
+    <div id="cards-grid">
+      <div class="card"></div>      
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
       </div>
+
+      
     </div>
+    <script>
+    //    definition of the function
+    //     function alerthello () {
+    //     alert('helo')
+    //     console.log('user clicked the first card')
+    //    }
+    // //    getting HTmL reference
+    // let card = document.querySelector('.card')
+    // // attracting logic to event
+    // card.addEventListener('click', alerthello )
+    //    console.log(1+8);
+    for(let i =1;i<11;i++){
+        console.log(i)
+    }
+
+    </script>
+    <!-- session final -->
+    <!-- Task: add a script with the logic to populate element corresponding to selector '#cards-grid' with 20 cards -->
+    <!-- Hint: you can use chatGPT if you don't know JavaScript yet
+      - get a reference of the container element '#cards-grid'
+      - run a loop for N times, N being the number of cards in this case, equal to 20
+      - in each iteration create a card, and append it to the container element
+      - a card should have the following structure: <div class="card"> <img /> <div> <h2 title="...">...</h2> <p>$...</p> <p>Description goes here...</p> <a>Read More</a> </div> </div>
+      - remeber to follow BEM convention when giving each element it's class
+    -->
   </body>
 </html>
